@@ -45,7 +45,7 @@ class PlaceInformation extends StatelessWidget {
                   fontSize: height / width * 9, fontWeight: FontWeight.bold),
             ),
             Text(
-              "in Edingburgh, UNited kingdom",
+              "in Edingburgh, United kingdom",
               style: TextStyle(
                   fontSize: height / width * 9, fontWeight: FontWeight.bold),
             ),
