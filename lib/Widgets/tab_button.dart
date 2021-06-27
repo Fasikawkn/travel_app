@@ -27,9 +27,8 @@ class TabButton extends StatelessWidget {
               text,
               style: TextStyle(
                   fontSize: 18,
-                  color: selectedPage == pageNumber
-                      ? Colors.deepPurple
-                      : Colors.black),
+                  color:
+                      selectedPage == pageNumber ? Colors.blue : Colors.black),
             ),
             if (selectedPage == pageNumber)
               Padding(
@@ -41,7 +40,7 @@ class TabButton extends StatelessWidget {
                     child: Icon(
                       Icons.circle,
                       size: 10,
-                      color: Colors.deepPurple,
+                      color: Colors.blue,
                     )),
               )
             else

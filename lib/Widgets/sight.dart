@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 // import 'package:page_transition/page_transition.dart';
 import 'package:travel_app/Widgets/star_icon.dart';
 import 'package:travel_app/screens/place_detail.dart';
@@ -135,7 +136,17 @@ class TourPlace extends StatelessWidget {
   }
 
   void selectMeal(BuildContext context) {
-    Navigator.push(context,
-        MaterialPageRoute(builder: (context) => PlaceDetail(id: this.id,text1: this.text1, text2: this.text2,imageUrl: this.imageUrl,rating: this.rating,)));
+    Navigator.push(
+        context,
+        PageTransition(
+            type: PageTransitionType.rightToLeft,
+            duration: Duration(milliseconds: 500),
+            child: PlaceDetail(
+              id: this.id,
+              text1: this.text1,
+              text2: this.text2,
+              imageUrl: this.imageUrl,
+              rating: this.rating,
+            )));
   }
 }
