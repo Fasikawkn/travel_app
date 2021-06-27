@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:travel_app/styles.dart';
+
 
 import 'custom_rect_tween.dart';
 
-//import 'package:popup_card/styles.dart';
 const String _heroAddTodo = 'add-todo-hero';
 
 class AddTodoPopupCard extends StatelessWidget {

@@ -65,7 +65,7 @@ class TourPlace extends StatelessWidget {
                       child: IconButton(
                         icon: Icon(
                           Icons.bookmark,
-                          color: Colors.deepPurple,
+                          color: Colors.blue,
                           size: height / width * 13,
                         ),
                         onPressed: () {},

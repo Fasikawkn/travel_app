@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/Models/popular_sight.dart';
 import 'package:travel_app/Models/sight.dart';
-import 'package:travel_app/Widgets/popular_place.dart';
 
 const DUMMY_SIGHTS = const [
   Sight(

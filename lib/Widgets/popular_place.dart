@@ -53,13 +53,16 @@ class PopularPlace extends StatelessWidget {
                           ),
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Image.asset(
-                              'assets/images/${this.imageUrl}',
-                              height: height * 0.09,
-                              width: width * 0.15,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child: Image.asset(
+                                'assets/images/${this.imageUrl}',
+                                height: height * 0.09,
+                                width: width * 0.15,
 //                    height: 350,
 //                    width: 280,
-                              fit: BoxFit.cover,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
